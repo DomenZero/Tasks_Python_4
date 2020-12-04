@@ -39,6 +39,8 @@ def sieve(num,pos):
 # 1    0.000    0.000    0.000    0.000 les_4_task_2.py:10(sieve)
 # cProfile.run('sieve(10000,200)')
 # 1    0.005    0.005    0.007    0.007 les_4_task_2.py:10(sieve)
+# cProfile.run('sieve(120000,10000)')
+# 1    0.053    0.053    0.066    0.066 les_4_task_2.py:10(sieve)
 
 
 def prime(num):
@@ -72,7 +74,13 @@ def prime(num):
 # 1    0.000    0.000    0.000    0.000 les_4_task_2.py:44(prime)
 # cProfile.run('prime(25)')
 # 1    0.000    0.000    0.000    0.000 les_4_task_2.py:44(prime)
-cProfile.run('prime(100)')
+# cProfile.run('prime(100)')
 # 1    0.001    0.001    0.001    0.001 les_4_task_2.py:44(prime)
 # cProfile.run('prime(200)')
 # 1    0.003    0.003    0.003    0.003 les_4_task_2.py:44(prime)
+# cProfile.run('prime(10000)')
+# 1    4.966    4.966    4.970    4.970 les_4_task_2.py:44(prime)
+
+# Вывод: сложность обоих алгоритмов O(n**2)
+# Для решета Эратосфена требуется первоначальная генерация чисел, что усложняет работу с функцией.
+# На значительно больших значениях решето Эратосфена может выигрывать по времени
